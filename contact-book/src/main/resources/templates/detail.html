@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous"
+  >
+  <link th:href="@{/css/detail.css}" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menú
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/">Crear nuevo contacto</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/contacts">Ver listado de contactos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <p>Información de contacto</p>
+  <div id="contact-container">
+    <div class="card-contact">
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <a class="btn btn-primary" th:href="@{edit/} + ${contact.id}">Editar</a>
+            </li>
+            <li class="nav-item" >
+              <a class="btn btn-danger" id="delete-btn">Borrar</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div>
+            <label class="fw-bold">ID: </label>
+            <label class="text-center" th:text="${contact.id}" id="out-id" ></label>
+          </div>
+          <div>
+            <label class="fw-bold">Nombre: </label>
+            <label class="text-center" th:text="${contact.name}"></label>
+          </div>
+          <div>
+            <label class="fw-bold">Teléfono: </label>
+            <label class="text-center" th:text="${contact.phone_number}"></label>
+          </div>
+          <div>
+            <label class="fw-bold">correo: </label>
+            <label class="text-center" th:text="${contact.email}"></label>
+          </div>
+          <div>
+            <label class="fw-bold">Fecha de nacimiento: </label>
+            <label class="text-center" th:text="${contact.birth_date}"></label>
+          </div>
+          <a href="/contacts" class="btn btn-primary">Regresar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+          crossorigin="anonymous">
+  </script>
+  <script th:src="@{/js/detail.js}"></script>
+</body>
+</html>

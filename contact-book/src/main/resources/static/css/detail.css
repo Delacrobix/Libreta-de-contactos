@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(52, 47, 61);
+}
+
+#contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contact{
+    width: 600px;
+}
+
+p{
+    padding-left: 10px;
+    color: azure;
+    font-size: 40px;
+    font-weight: 600;
+}

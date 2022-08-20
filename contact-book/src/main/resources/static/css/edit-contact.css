@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(52, 47, 61);
+}
+
+#form-contact{
+    padding: 50px;
+    max-width: 800px;
+}
+
+#form-input{
+    margin: 20px;
+    width: 500px;
+    height: 60px;
+}
+
+p{
+    padding-left: 10px;
+    color: azure;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h4{
+    color: aliceblue;
+}
