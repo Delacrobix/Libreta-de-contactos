@@ -1,8 +1,40 @@
-# Libreta-de-contactos
+# Libreta de contactos
 
-### <strong>Instalación de dependencias y ejecución del programa:</strong><a name="id13"></a>
+En esta aplicación es posible guardar, editar y borrar contactos.
 
-- <strong>Creación de la base de datos: </strong> El script sql que crea la base de datos se encuentra en la dirección
+### <strong>Tecnologías usadas, instalación de dependencias y ejecución del programa:</strong><a name="id13"></a>
+
+- <strong>Tecnologías: </strong>
+    - Java
+    - Spring Boot
+    - MySQL
+    - JavaScript vanilla
+
+- <strong>Creación de la base de datos: </strong> 
+
+    Es posible usar la base de datos de dos maneras, la primera es la configuración default del proyecto el cual esta conectado a una base de datos en la nube. La segunda manera es mediante una base de datos local para lo cual se necesita <a href="https://www.mysql.com" target="_blank"><strong> MySQL</strong></a> para realizar los siguientes pasos:
+
+    Reemplazar el código del archivo
+
+        \contact-book\src\main\resources\application.properties
+
+    Las lineas 5, 8 y 11 correspondientes a 
+
+        5| spring.datasource.url=jdbc:mysql://aws-sa-east-1.connect.psdb.cloud/contact-book?    sslMode=VERIFY_IDENTITY
+
+        8| spring.datasource.username=mmmtu8kgmrs7l5ja16z8
+
+        11| spring.datasource.password=pscale_pw_BqLzCvPRBcArY7GEY301D7WoMAUFp3U19bNg7c6axrD
+
+    deben ser reemplazadas por las siguientes lineas:
+
+        5| spring.datasource.url=jdbc:mysql://localhost/contactBook?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrival=true
+
+        8| spring.datasource.username=root
+
+        11| spring.datasource.password=pscale_pw_BqLzCvPRBcArY7GEY301D7WoMAUFp3U19bNg7c6axrD
+
+    Ejecutar el script SQL: El script crea la base de datos y se encuentra en la dirección
 
         /contact-book/database.sql
 
@@ -24,7 +56,7 @@
 
     La aplicación fue hosteada en el puerto 8080 y su dirección raíz es 
         
-        localhost:8080
+        localhost:8080/
 
 ### <strong>Experiencia de usuario:</strong> <a name="id14"></a>
 
