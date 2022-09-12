@@ -19,3 +19,4 @@ INSERT INTO contact VALUES (5, "Brook", "3028770085", "Yohoho@yahoo.com", "1997-
 INSERT INTO contact VALUES (6, "Chopper", "3187877785", "TTchopper@outlook.com", "1997-10-25");
 INSERT INTO contact VALUES (7, "Franky", "3778778785", "Supercola@gmail.com", "1997-10-25");
 INSERT INTO contact VALUES (8, "Ussop", "3079774885", "sogeking@gmail.com", "1997-10-25");
+INSERT INTO contact VALUES (9, "Robin", "3006974885", "Furobin@fakemail.com", "1987-05-15");
