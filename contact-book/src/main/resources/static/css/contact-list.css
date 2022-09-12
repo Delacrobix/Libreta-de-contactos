@@ -1,34 +1,52 @@
-body{
-    background-color: rgb(52, 47, 61);
+body {
+  background-color: rgb(52, 47, 61);
 }
 
-.card-contact{
-    max-width: 500px;
-    padding: 10px 10px 10px 10px;
+#menu-container .navbar-nav.me-auto.mb-2.mb-lg-0 {
+  font-size: 20px;
+  color: black;
+}
+#menu-container li #menu-button:hover {
+  border-radius: 10px;
+  background-color: rgb(179, 179, 179);
 }
 
-.nav-item{
-    padding: 1px;
+.card-contact {
+  max-width: 500px;
+  padding: 10px 10px 10px 10px;
 }
 
-.col-sm-6{
-    padding: 25px;
-    max-width: 350px;
-}
-
-p{
-    padding-left: 10px;
-    color: azure;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nav-item {
+  padding: 1px;
 }
 
 .col-sm-6 {
-    width: 90%;
+  padding: 25px;
+  max-width: 350px;
 }
+.col-sm-6 #detail-btn {
+  margin-top: 5px;
+  background-color: rgb(106, 176, 241);
+  border: solid 1px rgb(106, 176, 241);
+}
+.col-sm-6 #detail-btn:hover {
+  background-color: rgb(74, 161, 243);
+}
+
+.tittle-container {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  color: azure;
+  font-size: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-sm-6 {
+  width: 90%;
+}/*# sourceMappingURL=contact-list.css.map */

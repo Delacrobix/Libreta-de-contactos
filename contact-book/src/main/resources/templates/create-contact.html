@@ -10,12 +10,12 @@
     <link th:href="@{/css/create-contact.css}" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light" id="menu-container">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="menu-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Menú
                         </a>
                         <ul class="dropdown-menu">
@@ -29,8 +29,10 @@
         </div>
     </nav>
 
-    <p>Crear contacto</p>
-
+    <div class="tittle-container">
+        <h1>Crear contacto</h1>
+    </div>
+    
     <form id="form-contact" class="container text-center">
         <h4>Ingrese los valores solicitados</h4>
         <div class="input-group mb-3">

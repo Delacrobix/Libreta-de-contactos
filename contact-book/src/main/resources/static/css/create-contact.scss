@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(52, 47, 61);
+}
+
+#menu-container{
+
+    .navbar-nav.me-auto.mb-2.mb-lg-0{
+        font-size: 20px;
+        color: black;
+    }
+
+    li #menu-button:hover{
+        border-radius: 10px;
+        background-color: rgb(179, 179, 179);
+    }
+}
+
+.tittle-container{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    color: azure;
+    font-size: 40px;
+}
+
+h4{
+    color: aliceblue;
+}
+
+.form-control{
+    height: 60px;
+}
+
+#form-contact{
+    padding: 50px;
+    max-width: 800px;
+
+    #form-input{
+        margin: 20px;
+        width: 350px;
+        height: 40px;
+        text-align: center;
+        align-content: center;
+        border: 1px solid #CCC;
+        color: #CCC;
+    }
+
+    #form-input:hover{
+        background-color: rgb(173, 173, 173);
+        color: black;
+    }
+}

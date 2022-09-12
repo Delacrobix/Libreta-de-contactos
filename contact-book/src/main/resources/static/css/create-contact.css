@@ -1,29 +1,46 @@
-body{
-    background-color: rgb(52, 47, 61);
+body {
+  background-color: rgb(52, 47, 61);
 }
 
-.form-control{
-    height: 60px;
+#menu-container .navbar-nav.me-auto.mb-2.mb-lg-0 {
+  font-size: 20px;
+  color: black;
+}
+#menu-container li #menu-button:hover {
+  border-radius: 10px;
+  background-color: rgb(179, 179, 179);
 }
 
-#form-contact{
-    padding: 50px;
-    max-width: 800px;
+.tittle-container {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  color: azure;
+  font-size: 40px;
 }
 
-#form-input{
-    margin: 20px;
-    width: 500px;
-    height: 60px;
+h4 {
+  color: aliceblue;
 }
 
-p{
-    padding-left: 10px;
-    color: azure;
-    font-size: 40px;
-    font-weight: 600;
+.form-control {
+  height: 60px;
 }
 
-h4{
-    color: aliceblue;
+#form-contact {
+  padding: 50px;
+  max-width: 800px;
 }
+#form-contact #form-input {
+  margin: 20px;
+  width: 350px;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+  border: 1px solid #CCC;
+  color: #CCC;
+}
+#form-contact #form-input:hover {
+  background-color: rgb(173, 173, 173);
+  color: black;
+}/*# sourceMappingURL=create-contact.css.map */
